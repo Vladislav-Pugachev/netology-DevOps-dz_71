@@ -1,0 +1,12 @@
+#cloud-config
+write_files:
+  - content: |
+      <!DOCTYPE html>
+      <html>
+      <body>
+      <meta charset="utf-8">
+      <h1>Моя картинка</h1>
+      <img src="https://storage.yandexcloud.net/pvv-netology/image" alt="my image" />
+      </body>
+      </html>
+    path: /var/www/html/index.html
